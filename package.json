@@ -1,13 +1,13 @@
 {
-  "name": "candour-borders-converter",
-  "version": "1.0.0",
+  "name": "candour-borders",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "author": "Domas Bitvinskas <domas.bitvinskas@me.com>",
   "license": "MIT",
-  "homepage": "https://github.com/candourpro/borders-converter",
+  "homepage": "https://github.com/candourpro/borders",
   "repository": {
     "type": "git",
-    "url": "git://github.com/candourpro/borders-converter.git"
+    "url": "git://github.com/candourpro/borders.git"
   },
   "scripts": {
     "build": "BABEL_ENV=production babel index.js -d dist"
