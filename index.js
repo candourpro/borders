@@ -8,9 +8,9 @@ const BORDER_PROPS = [
   'borderLeft',
 ]
 
-export default {
-  match: ({ borders }, value, key) => (
-    borders && value && _.has(borders, value) && _.includes(BORDER_PROPS, key)
+export default (config) => ({
+  match: (_theme, value, key) => (
+    config && value && _.has(config, value) && _.includes(BORDER_PROPS, key)
   ),
-  value: ({ borders }, value) => borders[value],
-}
+  value: (_theme, value) => config[value],
+})
